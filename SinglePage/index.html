@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+  <script src="js/responsive-nav.js"></script>
+<style>
+{margin:0;}
+.text-xs, {
+    font-size: 16px;
+}
+.text-justify {
+    text-align: justify;
+}
+.m-x-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.text-xxs-center{
+    text-align: center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+ figure {
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery {
+  width: 100%; overflow: hidden;
+}
+figure.slider {
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite;
+}
+figure.slider figure {
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit;
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption {
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem;
+}
+
+.footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+}
+</style>
+<script>
+
+</script>
+
+</head>
+<body>
+<div id="home"></div>
+  <header>
+
+        <a href="#home" class="logo" data-scroll> <img src="paypal.png"/></a>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+            <li class="menu-item"><a href="#about" data-scroll>About Us</a></li>
+            <li class="menu-item"><a href="#how" data-scroll>How it Works</a></li>
+            <li class="menu-item"><a href="#contact" data-scroll>Contact Us</a></li>
+
+          </ul>
+        </nav>
+      </header>
+      <script src="js/fastclick.js"></script>
+          <script src="js/scroll.js"></script>
+          <script src="js/fixed-responsive-nav.js"></script>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="https://placeimg.com/640/480/any" alt>
+			<figcaption>Hobbiton, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="https://placeimg.com/640/480/arch" alt>
+			<figcaption>Wanaka, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="https://placeimg.com/640/480/nature" alt>
+			<figcaption>Utah, United States</figcaption>
+		</figure>
+		<figure>
+			<img src="https://placeimg.com/640/480/people" alt>
+			<figcaption>Bryce Canyon, Utah, United States</figcaption>
+		</figure>
+
+	</figure>
+</div>
+<h2 id ="about" class=" text-xxs-center">About</h2>
+<div id="aboutDetails" class="text-xs text-justify m-x-auto"  >
+  At Apptopia, we all come to work every day because we want to solve the biggest problem in mobile. Everyone is guessing. Publishers don’t know what apps to build, how to monetize them, or even what to price them at. Advertisers & brands don’t know where their target users are, how to reach them, or even how much they need to spend in order to do so. Investors aren’t sure which apps and genres are growing the quickest, and where users are really spending their time (and money).
+
+  Throughout the history of business, people use data to make more informed decisions. Our mission at Apptopia is to make the app economy more transparent. Today we provide the most actionable mobile app data & insights in the industry. We want to make this data available to as many people as possible (not just the top 5%).
+
+
+
+
+</div>
+<h3 id ="how" class=" text-xxs-center">How it Works</h3>
+<div class="text-xs text-justify m-x-auto"  >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</div>
+<h4 id="contact" class="text-xxs-center">Contact us</h4>
+<div class="text-xs text-xxs-center m-x-auto">xyz.help@gmail.com</div>
+
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      <span> About the company</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
+      ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span> Street name and number</span> City, Country</p>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> (+00) 0000 000 000</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="#"> office@company.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <h2> Company<span> logo</span></h2>
+    <p class="menu">
+      <a href="#"> Home</a> |
+      <a href="#"> About</a> |
+      <a href="#"> Services</a> |
+      <a href="#"> Portfolio</a> |
+      <a href="#"> News</a> |
+      <a href="#"> Contact</a>
+    </p>
+    <p class="name"> Company Name &copy; 2017</p>
+  </div>
+</footer>
+
+</body>
+</html>
